@@ -1,0 +1,30 @@
+{
+  "id": "toggle",
+  "name": {
+    "en": "toggle"
+  },
+  "class": "socket",
+  "capabilities": [
+    "onoff",
+    "onoff.one",
+    "onoff.two",
+    "toggle"
+  ],
+  "pair": [
+    {
+      "id": "list_devices",
+      "template": "list_devices",
+      "navigation": {
+        "next": "add_devices"
+      }
+    },
+    {
+      "id": "add_devices",
+      "template": "add_devices"
+    }
+  ],
+  "images": {
+    "large": "/drivers/toggle/assets/images/large.png",
+    "small": "/drivers/toggle/assets/images/small.png"
+  }
+}

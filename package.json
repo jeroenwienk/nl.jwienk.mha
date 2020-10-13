@@ -1,0 +1,19 @@
+{
+  "name": "nl.jwienk.mha",
+  "version": "1.0.0",
+  "main": "app.js",
+  "scripts": {
+    "start": "nodemon --watch . --exec \"homey app run\""
+  },
+  "devDependencies": {
+    "homey": "^2.8.0"
+  },
+  "nodemonConfig": {
+    "ignore": [
+      "app.json"
+    ]
+  },
+  "dependencies": {
+    "uuid": "^8.3.1"
+  }
+}

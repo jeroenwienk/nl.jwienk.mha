@@ -1,0 +1,25 @@
+{
+  "id": "nl.jwienk.mha",
+  "version": "1.0.0",
+  "compatibility": ">=5.0.0",
+  "sdk": 3,
+  "brandColor": "#00FF00",
+  "name": {
+    "en": "mha"
+  },
+  "description": {
+    "en": "mha"
+  },
+  "category": [
+    "tools"
+  ],
+  "permissions": [],
+  "images": {
+    "large": "/assets/images/large.png",
+    "small": "/assets/images/small.png"
+  },
+  "author": {
+    "name": "Jeroen Wienk",
+    "email": "jeroenwienk@gmail.com"
+  }
+}

@@ -1,0 +1,70 @@
+{
+  "id": "nl.jwienk.mha",
+  "version": "1.0.0",
+  "compatibility": ">=5.0.0",
+  "sdk": 3,
+  "brandColor": "#00FF00",
+  "name": {
+    "en": "mha"
+  },
+  "description": {
+    "en": "mha"
+  },
+  "category": [
+    "tools"
+  ],
+  "permissions": [],
+  "images": {
+    "large": "/assets/images/large.png",
+    "small": "/assets/images/small.png"
+  },
+  "author": {
+    "name": "Jeroen Wienk",
+    "email": "jeroenwienk@gmail.com"
+  },
+  "drivers": [
+    {
+      "id": "toggle",
+      "name": {
+        "en": "toggle"
+      },
+      "class": "socket",
+      "capabilities": [
+        "onoff",
+        "onoff.one",
+        "onoff.two",
+        "toggle"
+      ],
+      "pair": [
+        {
+          "id": "list_devices",
+          "template": "list_devices",
+          "navigation": {
+            "next": "add_devices"
+          }
+        },
+        {
+          "id": "add_devices",
+          "template": "add_devices"
+        }
+      ],
+      "images": {
+        "large": "/drivers/toggle/assets/images/large.png",
+        "small": "/drivers/toggle/assets/images/small.png"
+      }
+    }
+  ],
+  "capabilities": {
+    "toggle": {
+      "type": "boolean",
+      "title": {
+        "en": "Toggle"
+      },
+      "getable": true,
+      "setable": true,
+      "uiComponent": "toggle",
+      "uiQuickAction": true,
+      "icon": "/assets/toggle.svg"
+    }
+  }
+}
