@@ -1,15 +1,12 @@
 {
-  "id": "toggle",
+  "id": "changing",
   "name": {
-    "en": "toggle"
+    "en": "changing"
   },
   "class": "socket",
   "capabilities": [
     "onoff",
-    "onoff.one",
-    "onoff.two",
-    "toggle",
-    "test"
+    "button"
   ],
   "pair": [
     {

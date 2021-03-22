@@ -1,0 +1,14 @@
+{
+  "title": {
+    "en": "Device argument"
+  },
+  "args": [
+    {
+      "name": "device",
+      "type": "device",
+      "filter": {
+        "driver_id": "toggle"
+      }
+    }
+  ]
+}

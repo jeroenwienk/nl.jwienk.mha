@@ -1,0 +1,11 @@
+{
+  "title": {
+    "en": "My Trigger"
+  },
+  "args": [
+    {
+      "type": "text",
+      "name": "text"
+    }
+  ]
+}

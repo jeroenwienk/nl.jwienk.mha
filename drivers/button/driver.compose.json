@@ -1,15 +1,13 @@
 {
-  "id": "toggle",
+  "id": "button",
   "name": {
-    "en": "toggle"
+    "en": "button"
   },
   "class": "socket",
   "capabilities": [
-    "onoff",
-    "onoff.one",
-    "onoff.two",
-    "toggle",
-    "test"
+    "button",
+    "button.one",
+    "volume_mute"
   ],
   "pair": [
     {

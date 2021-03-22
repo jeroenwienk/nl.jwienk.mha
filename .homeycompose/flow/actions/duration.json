@@ -1,0 +1,13 @@
+{
+  "title": {
+    "en": "Duration card"
+  },
+  "duration": true,
+  "args": [
+    {
+      "name": "duration",
+      "type": "number",
+      "required": false
+    }
+  ]
+}

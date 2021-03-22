@@ -5,15 +5,18 @@
   "scripts": {
     "start": "nodemon --watch . --exec \"homey app run\""
   },
+  "dependencies": {
+    "lodash": "^4.17.21",
+    "uuid": "^8.3.2"
+  },
   "devDependencies": {
-    "homey": "^2.8.0"
+    "@types/homey": "npm:homey-apps-sdk-v3-types@^0.1.0",
+    "nodemon": "^2.0.7",
+    "prettier": "^2.2.1"
   },
   "nodemonConfig": {
     "ignore": [
       "app.json"
     ]
-  },
-  "dependencies": {
-    "uuid": "^8.3.1"
   }
 }

@@ -13,7 +13,11 @@
   "category": [
     "tools"
   ],
-  "permissions": [],
+  "permissions": [
+    "homey:manager:api",
+    "homey:app:com.athom.screenshot",
+    "homey:app:com.athom.homeyscript"
+  ],
   "images": {
     "large": "/assets/images/large.png",
     "small": "/assets/images/small.png"

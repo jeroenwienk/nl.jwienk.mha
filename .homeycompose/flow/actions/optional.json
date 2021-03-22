@@ -1,0 +1,13 @@
+{
+  "title": {
+    "en": "Optional argument"
+  },
+  "duration": true,
+  "args": [
+    {
+      "name": "optional",
+      "type": "text",
+      "required": false
+    }
+  ]
+}

@@ -14,7 +14,11 @@
   "category": [
     "tools"
   ],
-  "permissions": [],
+  "permissions": [
+    "homey:manager:api",
+    "homey:app:com.athom.screenshot",
+    "homey:app:com.athom.homeyscript"
+  ],
   "images": {
     "large": "/assets/images/large.png",
     "small": "/assets/images/small.png"
@@ -23,7 +27,150 @@
     "name": "Jeroen Wienk",
     "email": "jeroenwienk@gmail.com"
   },
+  "flow": {
+    "triggers": [
+      {
+        "title": {
+          "en": "My Trigger"
+        },
+        "args": [
+          {
+            "type": "text",
+            "name": "text"
+          }
+        ],
+        "id": "trigger"
+      }
+    ],
+    "actions": [
+      {
+        "title": {
+          "en": "Device argument"
+        },
+        "args": [
+          {
+            "name": "device",
+            "type": "device",
+            "filter": {
+              "driver_id": "toggle"
+            }
+          }
+        ],
+        "id": "device"
+      },
+      {
+        "title": {
+          "en": "Device argument two"
+        },
+        "args": [
+          {
+            "name": "device2",
+            "type": "device"
+          },
+          {
+            "type": "text",
+            "name": "my_text",
+            "placeholder": {
+              "en": "Type something..."
+            }
+          }
+        ],
+        "id": "device_two"
+      },
+      {
+        "title": {
+          "en": "Duration card"
+        },
+        "duration": true,
+        "args": [
+          {
+            "name": "duration",
+            "type": "number",
+            "required": false
+          }
+        ],
+        "id": "duration"
+      },
+      {
+        "title": {
+          "en": "Optional argument"
+        },
+        "duration": true,
+        "args": [
+          {
+            "name": "optional",
+            "type": "text",
+            "required": false
+          }
+        ],
+        "id": "optional"
+      },
+      {
+        "title": {
+          "en": "Trigger trigger"
+        },
+        "id": "trigger_trigger"
+      }
+    ]
+  },
   "drivers": [
+    {
+      "id": "button",
+      "name": {
+        "en": "button"
+      },
+      "class": "socket",
+      "capabilities": [
+        "button",
+        "button.one",
+        "volume_mute"
+      ],
+      "pair": [
+        {
+          "id": "list_devices",
+          "template": "list_devices",
+          "navigation": {
+            "next": "add_devices"
+          }
+        },
+        {
+          "id": "add_devices",
+          "template": "add_devices"
+        }
+      ],
+      "images": {
+        "large": "/drivers/toggle/assets/images/large.png",
+        "small": "/drivers/toggle/assets/images/small.png"
+      }
+    },
+    {
+      "id": "changing",
+      "name": {
+        "en": "changing"
+      },
+      "class": "socket",
+      "capabilities": [
+        "onoff",
+        "button"
+      ],
+      "pair": [
+        {
+          "id": "list_devices",
+          "template": "list_devices",
+          "navigation": {
+            "next": "add_devices"
+          }
+        },
+        {
+          "id": "add_devices",
+          "template": "add_devices"
+        }
+      ],
+      "images": {
+        "large": "/drivers/toggle/assets/images/large.png",
+        "small": "/drivers/toggle/assets/images/small.png"
+      }
+    },
     {
       "id": "setting",
       "name": {
@@ -164,7 +311,8 @@
         "onoff",
         "onoff.one",
         "onoff.two",
-        "toggle"
+        "toggle",
+        "test"
       ],
       "pair": [
         {
@@ -186,6 +334,15 @@
     }
   ],
   "capabilities": {
+    "test": {
+      "type": "string",
+      "title": {
+        "en": "text1"
+      },
+      "getable": true,
+      "setable": true,
+      "uiComponent": null
+    },
     "toggle": {
       "type": "boolean",
       "title": {
