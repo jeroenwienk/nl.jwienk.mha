@@ -1,11 +1,10 @@
 {
   "id": "setting",
   "name": {
-    "en": "setting"
+    "en": "Settings"
   },
   "class": "socket",
-  "capabilities": [
-  ],
+  "capabilities": [],
   "pair": [
     {
       "id": "list_devices",
@@ -25,33 +24,11 @@
   },
   "settings": [
     {
-      "id": "root",
-      "type": "text",
-      "label": {
-        "en": "Text label root"
-      },
-      "value": "Text value root",
-      "hint": {
-        "en": "If needed, add an additional description to explain this setting."
-      }
-    },
-    {
       "type": "group",
       "label": {
         "en": "General settings"
       },
       "children": [
-        {
-          "id": "text1",
-          "type": "text",
-          "label": {
-            "en": "Text label 1"
-          },
-          "value": "Text value 1",
-          "hint": {
-            "en": "If needed, add an additional description to explain this setting."
-          }
-        },
         {
           "id": "number1",
           "type": "number",
@@ -64,66 +41,6 @@
           "units": {
             "en": "minutes"
           }
-        },
-        {
-          "id": "radio1",
-          "type": "radio",
-          "label": {
-            "en": "Radio label 1"
-          },
-          "value": "choice1",
-          "values": [
-            {
-              "id": "choice1",
-              "label": {
-                "en": "Radio choice 1"
-              }
-            },
-            {
-              "id": "choice2",
-              "label": {
-                "en": "Radio choice 2"
-              }
-            }
-          ]
-        }
-      ]
-    },
-    {
-      "type": "group",
-      "label": {
-        "en": "Specific settings"
-      },
-      "children": [
-        {
-          "id": "checkbox1",
-          "type": "checkbox",
-          "value": true,
-          "label": {
-            "en": "Checkbox label 1"
-          }
-        },
-        {
-          "id": "dropdown1",
-          "type": "dropdown",
-          "value": "choice2",
-          "label": {
-            "en": "Dropdown label 1"
-          },
-          "values": [
-            {
-              "id": "choice1",
-              "label": {
-                "en": "Dropdown choice 1"
-              }
-            },
-            {
-              "id": "choice2",
-              "label": {
-                "en": "Dropdown choice 2"
-              }
-            }
-          ]
         }
       ]
     }

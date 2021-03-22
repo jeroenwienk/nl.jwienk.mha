@@ -5,15 +5,15 @@ const { v4: uuid } = require('uuid');
 
 class SettingDriver extends Homey.Driver {
   async onInit() {
-    this.log('settingDriver:onInit');
+    this.log('SettingDriver:onInit');
   }
 
   async onPairListDevices() {
-    this.log('settingDriver:onPairListDevices');
+    this.log('SettingDriver:onPairListDevices');
 
     return [
       {
-        name: 'Setting',
+        name: 'Settings Device',
         data: {
           id: uuid(),
         },
