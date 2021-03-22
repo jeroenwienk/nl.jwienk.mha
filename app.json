@@ -6,17 +6,16 @@
   "sdk": 3,
   "brandColor": "#00FF00",
   "name": {
-    "en": "mha"
+    "en": "Test"
   },
   "description": {
-    "en": "mha"
+    "en": "Test"
   },
   "category": [
     "tools"
   ],
   "permissions": [
     "homey:manager:api",
-    "homey:app:com.athom.screenshot",
     "homey:app:com.athom.homeyscript"
   ],
   "images": {
@@ -174,7 +173,7 @@
     {
       "id": "setting",
       "name": {
-        "en": "setting"
+        "en": "Settings"
       },
       "class": "socket",
       "capabilities": [],
@@ -197,105 +196,46 @@
       },
       "settings": [
         {
-          "id": "root",
-          "type": "text",
-          "label": {
-            "en": "Text label root"
-          },
-          "value": "Text value root",
-          "hint": {
-            "en": "If needed, add an additional description to explain this setting."
-          }
-        },
-        {
           "type": "group",
           "label": {
             "en": "General settings"
           },
           "children": [
             {
-              "id": "text1",
-              "type": "text",
-              "label": {
-                "en": "Text label 1"
-              },
-              "value": "Text value 1",
-              "hint": {
-                "en": "If needed, add an additional description to explain this setting."
-              }
-            },
-            {
               "id": "number1",
               "type": "number",
               "label": {
-                "en": "Number label 1"
+                "en": "Min/Max/Step"
               },
               "value": 3,
               "min": 0,
               "max": 5,
+              "step": 0.01,
               "units": {
                 "en": "minutes"
               }
             },
             {
-              "id": "radio1",
-              "type": "radio",
+              "id": "number2",
+              "type": "number",
               "label": {
-                "en": "Radio label 1"
+                "en": "Min/Max/Step with hint"
               },
-              "value": "choice1",
-              "values": [
-                {
-                  "id": "choice1",
-                  "label": {
-                    "en": "Radio choice 1"
-                  }
-                },
-                {
-                  "id": "choice2",
-                  "label": {
-                    "en": "Radio choice 2"
-                  }
-                }
-              ]
-            }
-          ]
-        },
-        {
-          "type": "group",
-          "label": {
-            "en": "Specific settings"
-          },
-          "children": [
-            {
-              "id": "checkbox1",
-              "type": "checkbox",
-              "value": true,
-              "label": {
-                "en": "Checkbox label 1"
-              }
+              "value": 3,
+              "min": 0,
+              "max": 5,
+              "step": 0.01,
+              "hint": "Hello there"
             },
             {
-              "id": "dropdown1",
-              "type": "dropdown",
-              "value": "choice2",
+              "id": "number3",
+              "type": "number",
               "label": {
-                "en": "Dropdown label 1"
+                "en": "Min/Max only"
               },
-              "values": [
-                {
-                  "id": "choice1",
-                  "label": {
-                    "en": "Dropdown choice 1"
-                  }
-                },
-                {
-                  "id": "choice2",
-                  "label": {
-                    "en": "Dropdown choice 2"
-                  }
-                }
-              ]
+              "value": 3,
+              "min": 0,
+              "max": 5
             }
           ]
         }

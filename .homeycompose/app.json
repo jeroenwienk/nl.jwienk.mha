@@ -5,19 +5,13 @@
   "sdk": 3,
   "brandColor": "#00FF00",
   "name": {
-    "en": "mha"
+    "en": "Test"
   },
   "description": {
-    "en": "mha"
+    "en": "Test"
   },
-  "category": [
-    "tools"
-  ],
-  "permissions": [
-    "homey:manager:api",
-    "homey:app:com.athom.screenshot",
-    "homey:app:com.athom.homeyscript"
-  ],
+  "category": ["tools"],
+  "permissions": ["homey:manager:api", "homey:app:com.athom.homeyscript"],
   "images": {
     "large": "/assets/images/large.png",
     "small": "/assets/images/small.png"
